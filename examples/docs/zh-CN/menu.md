@@ -131,12 +131,15 @@
 ```html
 <el-row class="tac">
   <el-col :span="12">
-    <h5>默认颜色</h5>
-    <el-menu
+    <h5>自定义颜色</h5>
+    <el-menu collapse
       default-active="2"
       class="el-menu-vertical-demo"
       @open="handleOpen"
-      @close="handleClose">
+      @close="handleClose"
+      background-color="#545c64"
+      text-color="#fff"
+      active-text-color="#ffd04b">
       <el-submenu index="1">
         <template slot="title">
           <i class="el-icon-location"></i>
@@ -170,15 +173,12 @@
     </el-menu>
   </el-col>
   <el-col :span="12">
-    <h5>自定义颜色</h5>
+    <h5>默认颜色</h5>
     <el-menu
       default-active="2"
       class="el-menu-vertical-demo"
       @open="handleOpen"
-      @close="handleClose"
-      background-color="#545c64"
-      text-color="#fff"
-      active-text-color="#ffd04b">
+      @close="handleClose">
       <el-submenu index="1">
         <template slot="title">
           <i class="el-icon-location"></i>
