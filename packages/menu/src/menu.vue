@@ -15,7 +15,6 @@
           style={{ backgroundColor: this.backgroundColor || '' }}
           class={{
             'el-menu--horizontal': this.mode === 'horizontal',
-            'el-menu--collapse': this.collapse,
             "el-menu": true
           }}
         >
